@@ -65,7 +65,7 @@ function App() {
       setchangeAboutHColor({
         color: "black"
       });
-      //about page heading, button, body styling
+      //about page heading, button, body styling 
       setheadingColorSet({
         color: "black"
       });
@@ -77,7 +77,7 @@ function App() {
       });
     }
   }
-
+//this is my test msg b
   return (
     <>
       <Router>
