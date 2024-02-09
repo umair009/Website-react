@@ -27,9 +27,6 @@ export default function About1(props) {
         padding: "5px",
         borderRadius: "10px"
     })
-    const [imgStyle, setImgStyle] = useState({
-        height: "400px"
-    })
     return (
         <>
             <div className="container">
@@ -37,7 +34,9 @@ export default function About1(props) {
                     {products.map((item, index) => (
                         <div className='col-md-4 my-3' key={index}>
                             <div className="card" style={{ width: "18rem" }}>
-                                <img style={imgStyle} className="card-img-top" src={item.image} alt="Card image cap" />
+                                <div style={{ height: "100%", width: "100%" }}>
+                                    <img style={{ maxWidth: "100 %" }} className="card-img-top" src={item.image} alt="Card image cap" />
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title">{item.title}</h5>
                                     <p style={categoryStyle}>{`Category: ${item.category}`}</p>
