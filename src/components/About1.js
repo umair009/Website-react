@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import axios from "axios"
-//this is my test msg b
-//new line
+
 export default function About1(props) {
     const [products, setProducts] = useState([])
     const callme = async () => {
@@ -14,7 +13,7 @@ export default function About1(props) {
 
         /*Here we import axios library through "npm install library_name(axios)".then pass get request to get data from 
         API. This library show us data in array, then loop this array and show data on frontend. */
-        let res = await axios.get("https://fakestoreapi.com/products"); //
+        let res = await axios.get("https://fakestoreapi.com/products"); // await will wait untill all the response will come then code will move forward
         let data = res.data
         setProducts(data)
     }
